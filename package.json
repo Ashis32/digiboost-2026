@@ -1,0 +1,17 @@
+{
+  "name": "digiboost-3d",
+  "version": "1.0.0",
+  "description": "Redesigned DigiBoost Solutions website with a premium 3D aesthetic inspired by Mads Matters.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "three": "^0.160.0"
+  }
+}
