@@ -1,3 +1,4 @@
+import './index.css';
 import { init3D } from './three-scene.js';
 
 document.addEventListener('DOMContentLoaded', () => {
