@@ -153,8 +153,10 @@ document.addEventListener('DOMContentLoaded', () => {
             testimonialsTrack.style.transform = `translateX(-${translation}px)`;
 
             // Toggle button states
-            prevBtn.style.opacity = slideIndex === 0 ? '0.4' : '1';
-            nextBtn.style.opacity = slideIndex === maxIndex ? '0.4' : '1';
+            prevBtn.style.opacity = slideIndex === 0 ? '0.3' : '1';
+            prevBtn.style.pointerEvents = slideIndex === 0 ? 'none' : 'auto';
+            nextBtn.style.opacity = slideIndex === maxIndex ? '0.3' : '1';
+            nextBtn.style.pointerEvents = slideIndex === maxIndex ? 'none' : 'auto';
         };
 
         nextBtn.addEventListener('click', () => {
@@ -180,20 +182,56 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// 7. Interactive Mock Contact Form handler
-window.handleFormSubmit = () => {
+// 7. Interactive Contact Form handler with FormSubmit API
+document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
     const successPanel = document.getElementById('form-success');
     
     if (contactForm && successPanel) {
-        // Simple visual transition
-        contactForm.style.opacity = '0';
-        setTimeout(() => {
-            contactForm.style.display = 'none';
-            successPanel.classList.add('active');
-        }, 300);
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Visual feedback: Disable button and show loading state
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin" style="margin-left: 8px;"></i>';
+            }
+
+            const formData = new FormData(contactForm);
+            
+            try {
+                const response = await fetch('https://formsubmit.co/ajax/support@digiboostsolutions.com', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    // Successful submission transition
+                    contactForm.style.opacity = '0';
+                    setTimeout(() => {
+                        contactForm.style.display = 'none';
+                        successPanel.classList.add('active');
+                    }, 300);
+                } else {
+                    alert('Oops! There was a problem submitting your form. Please try again.');
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = 'Submit Inquiry <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>';
+                    }
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert('Connection error. Please check your internet and try again.');
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Submit Inquiry <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>';
+                }
+            }
+        });
     }
-};
+});
 
 window.resetFormState = () => {
     const contactForm = document.getElementById('contact-form');
@@ -206,6 +244,12 @@ window.resetFormState = () => {
             contactForm.style.display = 'block';
             setTimeout(() => {
                 contactForm.style.opacity = '1';
+                // Reset submit button text
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Submit Inquiry <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>';
+                }
             }, 50);
         }, 300);
     }
