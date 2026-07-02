@@ -1,5 +1,6 @@
 import './index.css';
 import { init3D } from './three-scene.js';
+import { worksData } from './works-data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Initialize the WebGL 3D Canvas Scene
@@ -179,6 +180,61 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Initial setup
         setTimeout(updateSliderPosition, 100);
+    }
+
+    // 6.5. Dynamic Portfolio Grid rendering and filtering
+    const portfolioGrid = document.getElementById('portfolio-grid');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+
+    if (portfolioGrid && filterButtons.length > 0) {
+        const renderWorks = (filterCategory = 'all') => {
+            portfolioGrid.innerHTML = '';
+            
+            const filteredWorks = filterCategory === 'all' 
+                ? worksData 
+                : worksData.filter(work => work.category === filterCategory);
+
+            filteredWorks.forEach((work, index) => {
+                const card = document.createElement('div');
+                card.className = 'portfolio-card fade-in';
+                card.style.animationDelay = `${index * 0.03}s`;
+
+                const tagsHTML = work.tags.map(tag => `<span>${tag}</span>`).join('');
+
+                card.innerHTML = `
+                    <div class="portfolio-image-wrapper">
+                        <div class="project-thumbnail project-${work.category}">
+                            ${work.initials}
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="project-category">${work.sector}</span>
+                        <h3>${work.title}</h3>
+                        <p>${work.desc}</p>
+                        <div class="project-tech">
+                            ${tagsHTML}
+                        </div>
+                    </div>
+                `;
+
+                portfolioGrid.appendChild(card);
+            });
+        };
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                portfolioGrid.style.opacity = '0';
+                setTimeout(() => {
+                    renderWorks(btn.dataset.filter);
+                    portfolioGrid.style.opacity = '1';
+                }, 150);
+            });
+        });
+
+        renderWorks();
     }
 });
 
