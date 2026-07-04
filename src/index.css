@@ -2029,3 +2029,74 @@ p {
     padding: 0.25rem 0.75rem;
     border-radius: 50px;
 }
+
+/* --- Brands Showcase Marquee Styles --- */
+.brands-section {
+    position: relative;
+    z-index: 10;
+    background-color: var(--bg-light);
+    border-top: 1px solid rgba(0, 48, 46, 0.04);
+    border-bottom: 1px solid rgba(0, 48, 46, 0.04);
+    padding: 3.5rem 0;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.brands-marquee-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    /* Soft fading edges for premium look */
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+}
+
+.brands-marquee {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 3rem;
+    width: 100%;
+}
+
+.marquee-track {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    min-width: 100%;
+}
+
+/* Pause marquee on hover */
+.brands-marquee-wrapper:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+.marquee-left .marquee-track {
+    animation: scrollLeft 80s linear infinite;
+}
+
+.marquee-track img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(1) opacity(0.45);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.marquee-track img:hover {
+    filter: grayscale(0) opacity(1);
+    transform: scale(1.08);
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 3rem));
+    }
+}

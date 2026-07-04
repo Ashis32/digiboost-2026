@@ -2,6 +2,9 @@ import './index.css';
 import { init3D } from './three-scene.js';
 import { worksData } from './works-data.js';
 
+// Eagerly import all processed brand logos as URLs
+const brandLogos = import.meta.glob('/src/assets/brands/processed/*.webp', { eager: true, query: '?url', import: 'default' });
+
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Initialize the WebGL 3D Canvas Scene
     init3D();
@@ -235,6 +238,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         renderWorks();
+    }
+
+    // 6.8. Dynamic Brands Showcase Marquee Rendering
+    const track1 = document.getElementById('marquee-track-1');
+    const track2 = document.getElementById('marquee-track-2');
+    
+    if (track1 && track2) {
+        const logoUrls = Object.values(brandLogos);
+        
+        const getAltText = (url) => {
+            const filename = url.split('/').pop().split('.')[0];
+            const decoded = decodeURIComponent(filename)
+                .replace(/[\-_]/g, ' ')
+                .replace(/\b\w/g, c => c.toUpperCase());
+            return decoded;
+        };
+
+        const html = logoUrls.map(url => {
+            const alt = getAltText(url);
+            return `<img src="${url}" alt="${alt}" />`;
+        }).join('\n');
+        
+        track1.innerHTML = html;
+        track2.innerHTML = html;
     }
 });
 
