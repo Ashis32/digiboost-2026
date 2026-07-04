@@ -245,18 +245,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const track2 = document.getElementById('marquee-track-2');
     
     if (track1 && track2) {
-        const logoUrls = Object.values(brandLogos);
-        
-        const getAltText = (url) => {
-            const filename = url.split('/').pop().split('.')[0];
+        const getAltText = (filePath) => {
+            const filename = filePath.split('/').pop().split('.')[0];
             const decoded = decodeURIComponent(filename)
                 .replace(/[\-_]/g, ' ')
                 .replace(/\b\w/g, c => c.toUpperCase());
             return decoded;
         };
 
-        const html = logoUrls.map(url => {
-            const alt = getAltText(url);
+        const html = Object.entries(brandLogos).map(([path, url]) => {
+            const alt = getAltText(path);
             return `<img src="${url}" alt="${alt}" />`;
         }).join('\n');
         
