@@ -5,7 +5,8 @@ export const worksData = [
         desc: "Built brand identity and managed social media content strategy covering health, life, travel and family floater plans, growing audience engagement with educational reels and infographics.",
         category: "healthcare-wellness",
         tags: ["Content", "Strategy", "InstagramReels", "Branding"],
-        initials: "ZI"
+        initials: "ZI",
+        logo: "Zenisk Logo (1).png"
     },
     {
         title: "Network Events & Promotions",
@@ -13,7 +14,8 @@ export const worksData = [
         desc: "Grew Instagram to 11K+ followers for a full-service event management company covering weddings, corporate events and movie premieres with behind-the-scenes reels and venue highlights.",
         category: "events-hospitality",
         tags: ["Social Growth", "Reels", "Events", "Photography"],
-        initials: "NE"
+        initials: "NE",
+        logo: "NETWORK LOGO.png"
     },
     {
         title: "Priyanka HigherStudies",
@@ -21,7 +23,8 @@ export const worksData = [
         desc: "Created structured social content for an MBA/PGDM/BBA admission consultant, building authority through career guidance posts, myth-busting reels and student success stories with 471 targeted followers.",
         category: "corporate-services",
         tags: ["EdTech", "Instagram", "Lead Gen", "Consulting"],
-        initials: "PH"
+        initials: "PH",
+        logo: "cropped-WhatsApp-Image-2025-09-15-at-5.29.13-PM.jpeg"
     },
     {
         title: "Krystal Cube",
@@ -29,7 +32,8 @@ export const worksData = [
         desc: "Built full social media presence for a packaged ice cube brand — with a mascot-led content strategy, viral meme formats, product storytelling reels, and growing to 611 followers with strong engagement.",
         category: "food-retail",
         tags: ["Content Strategy", "Mascot Branding", "Reels"],
-        initials: "KC"
+        initials: "KC",
+        logo: "lgo.png"
     },
     {
         title: "Raya Apparels",
@@ -37,7 +41,8 @@ export const worksData = [
         desc: "Managed social content for a B2B clothing manufacturer serving bulk, corporate, safety-wear and all-weather orders — using behind-the-scenes reels, client proof posts and relatable factory floor content.",
         category: "corporate-services",
         tags: ["B2B Content", "Reels", "Brand Awareness"],
-        initials: "RA"
+        initials: "RA",
+        logo: "Raya.png"
     },
     {
         title: "RS Cove",
@@ -45,7 +50,8 @@ export const worksData = [
         desc: "Created brand identity and social strategy for a premium convention center in Bhubaneswar — showcasing weddings, receptions, corporate events and outdoor celebrations through cinematic reels and venue highlights.",
         category: "events-hospitality",
         tags: ["Venue Branding", "Reels", "Graphic Design"],
-        initials: "RC"
+        initials: "RC",
+        logo: "Rs-Cove.png"
     },
     {
         title: "Healing Senses",
@@ -61,7 +67,8 @@ export const worksData = [
         desc: "Built social presence for a 25+ year multi-specialty dental clinic in Bhubaneswar — with treatment showcase reels, myth-busting content, smile transformation posts and equipment unboxings.",
         category: "healthcare-wellness",
         tags: ["Medical Content", "Education", "Reels"],
-        initials: "MD"
+        initials: "MD",
+        logo: "logo (4).png"
     },
     {
         title: "Chandramalli Boutique",
@@ -77,7 +84,8 @@ export const worksData = [
         desc: "Grew Instagram to 739 followers for a beauty and slimming clinic — promoting services like PRP, HIFU, chemical peels and body sculpting through client testimonials, treatment reels and seasonal offers.",
         category: "fashion-beauty",
         tags: ["Beauty Content", "Offers", "Reel"],
-        initials: "VJ"
+        initials: "VJ",
+        logo: "DP.2.png"
     },
     {
         title: "Greenuss Wellness",
@@ -85,7 +93,8 @@ export const worksData = [
         desc: "Created premium brand content for an Ayurvedic wellness product company — with cinematic product photography, educational health posts and lifestyle reels for skincare, supplements and toothpaste lines.",
         category: "healthcare-wellness",
         tags: ["Product Branding", "Content Strategy"],
-        initials: "GW"
+        initials: "GW",
+        logo: "LOGO (2).png"
     },
     {
         title: "Saheli Cosmetics",
@@ -93,7 +102,8 @@ export const worksData = [
         desc: "Managed social content for a wholesale and retail cosmetics store in Bhubaneswar — driving viral meme reels, product demos, store walkthroughs and brand deals with 2M+ video reach to build a loyal beauty community.",
         category: "fashion-beauty",
         tags: ["Viral Reels", "Meme Content"],
-        initials: "SC"
+        initials: "SC",
+        logo: "logo2 (1) (1).png"
     },
     {
         title: "Rainbow Fenstar",
@@ -101,7 +111,8 @@ export const worksData = [
         desc: "Built brand and social strategy for a uPVC and aluminium doors & windows company — growing to 852 followers with product showcases, factory reels, installation highlights and lifestyle-led content.",
         category: "food-retail",
         tags: ["Product Content", "Brand Awareness"],
-        initials: "RF"
+        initials: "RF",
+        logo: "rAINBOW LOGO.png"
     },
     {
         title: "Spice N Chutney",
@@ -109,7 +120,8 @@ export const worksData = [
         desc: "Launched social media presence for a pure veg multi-cuisine restaurant on Cuttack–Puri bypass — with food photography, festive posts, meme reels and menu highlight content to drive footfall and delivery orders.",
         category: "food-retail",
         tags: ["Food Content", "Reels"],
-        initials: "SC"
+        initials: "SC",
+        logo: "Logo... (1).png"
     },
     {
         title: "Graphica",
@@ -117,7 +129,8 @@ export const worksData = [
         desc: "Managed social content for a LED signage and ACP facade advertising agency in Bhubaneswar — with client testimonials, myth-vs-fact posts, product showcases and walk-in conversion focused reels.",
         category: "corporate-services",
         tags: ["B2B Content", "Lead Gen"],
-        initials: "GR"
+        initials: "GR",
+        logo: "logo2.png"
     },
     {
         title: "Siddhi Vinayak Marbles",
@@ -125,7 +138,8 @@ export const worksData = [
         desc: "Created premium social content for an Italian and luxury stone importer in Bhubaneswar — with cinematic marble showcases, heritage storytelling, product naming reels and interior design inspiration posts.",
         category: "food-retail",
         tags: ["Luxury Branding", "Content Strategy"],
-        initials: "SV"
+        initials: "SV",
+        logo: "Siddhi Vinayak Marbles png.png"
     },
     {
         title: "Releaf",
@@ -165,7 +179,8 @@ export const worksData = [
         desc: "Managed content for a 5,375-follower multi-location gym chain across Bhubaneswar and Gurgaon — with workout tutorial reels, Zumba and Pilates content, member transformation posts and event coverage.",
         category: "healthcare-wellness",
         tags: ["Fitness Content", "Community Building"],
-        initials: "AT"
+        initials: "AT",
+        logo: "#ATF.png"
     },
     {
         title: "Cassiopeia Partners",
@@ -189,7 +204,8 @@ export const worksData = [
         desc: "Built and grew Instagram to 2,666 followers for a doorstep car and bike cleaning service — with service demo reels, seasonal combo offer posts, before-after content and festive creatives across Cuttack and Bhubaneswar.",
         category: "corporate-services",
         tags: ["Service Marketing", "Offer Campaigns", "Lead Gen"],
-        initials: "BC"
+        initials: "BC",
+        logo: "LOGO 1-02-01.png"
     },
     {
         title: "ESPAO Community",
@@ -197,7 +213,8 @@ export const worksData = [
         desc: "Built social presence for Odisha's premier Esports Association — growing to 2,835 followers with tournament announcement reels, event day coverage, chess festival highlights and gaming culture content to unite Odisha's competitive gaming community.",
         category: "events-hospitality",
         tags: ["Community Building", "Event Coverage", "Reels"],
-        initials: "EC"
+        initials: "EC",
+        logo: "logo8 (3).png"
     },
     {
         title: "NP Cooling Solutions",
@@ -205,7 +222,8 @@ export const worksData = [
         desc: "Launched Instagram for a trusted HVAC and AC sales & service provider in Bhubaneswar — with educational tips, before-after service reels, summer offer posts and awareness content on AC maintenance and energy savings.",
         category: "corporate-services",
         tags: ["Service Marketing", "Educational Content", "Lead Gen"],
-        initials: "NP"
+        initials: "NP",
+        logo: "DP BG REMOVE.png"
     },
     {
         title: "RJ Lawns",
@@ -221,7 +239,8 @@ export const worksData = [
         desc: "Grew to 588 followers for a luxury hotel and banquet in Khandagiri, Bhubaneswar — with decor showcases, event highlight reels, booking offer posts and venue partnership announcements for corporate and social events.",
         category: "events-hospitality",
         tags: ["Venue Branding", "Event Content"],
-        initials: "AL"
+        initials: "AL",
+        logo: "AS lagon logo.png"
     },
     {
         title: "Party Bliss",
@@ -229,7 +248,8 @@ export const worksData = [
         desc: "Built social media for a birthday and anniversary decor service — with themed setup showcases, romantic date reels, influencer collaborations and offer posts covering jungle safari, circus, and custom balloon themes.",
         category: "events-hospitality",
         tags: ["Event Content", "Reels"],
-        initials: "PB"
+        initials: "PB",
+        logo: "party-bliss-logo-2.png"
     },
     {
         title: "96 Century Restaurant",
@@ -237,7 +257,8 @@ export const worksData = [
         desc: "Created brand and social content for Bhubaneswar's tribal theme restaurant and banquet hall — with food photography, Odia cuisine spotlights, party package promotions and Swiggy-Zomato offer campaigns.",
         category: "food-retail",
         tags: ["Food Content", "Brand Identity"],
-        initials: "NC"
+        initials: "NC",
+        logo: "LOGO (1).png"
     },
     {
         title: "The Jawed Habib (Soubhagya Nagar)",
@@ -253,7 +274,8 @@ export const worksData = [
         desc: "Grew to 1,372 followers for a unisex hair and beauty salon in Nayapalli — with hair transformation reels, festive combo offer posts, influencer collaborations, Botox and keratin treatment showcases.",
         category: "fashion-beauty",
         tags: ["Beauty Content", "Offer Posts"],
-        initials: "BS"
+        initials: "BS",
+        logo: "logo (5).png"
     },
     {
         title: "VLCC School of Beauty",
@@ -261,7 +283,8 @@ export const worksData = [
         desc: "Managed content for one of Asia's premier beauty skill development schools with 45.3K followers — with student transformation reels, nail art and PMU course showcases, bridal makeup tutorials and placement success stories.",
         category: "fashion-beauty",
         tags: ["EdTech Content", "Course Marketing"],
-        initials: "VS"
+        initials: "VS",
+        logo: "VLCC-logo-.png"
     },
     {
         title: "Bhubaneswari Marbles",
@@ -293,7 +316,8 @@ export const worksData = [
         desc: "Built Instagram for an abacus and mental math education centre in Bhubaneswar — with student performance reels, math challenge videos, state level competition prep posts and admission open campaigns to drive enrollments.",
         category: "corporate-services",
         tags: ["Education Content", "Lead Gen"],
-        initials: "UN"
+        initials: "UN",
+        logo: "logo (6).png"
     },
     {
         title: "Mishra Photography & Films",

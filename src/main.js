@@ -190,6 +190,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');
 
     if (portfolioGrid && filterButtons.length > 0) {
+        const getLogoUrl = (logoName) => {
+            if (!logoName) return null;
+            let cleaned = logoName.substring(0, logoName.lastIndexOf('.'));
+            cleaned = cleaned.replace(/[\s()#]/g, '_');
+            cleaned = cleaned.replace(/_+/g, '_');
+            cleaned = cleaned.replace(/^_+|_+$/g, '');
+            const webpName = cleaned + '.webp';
+            const path = `/src/assets/brands/processed/${webpName}`;
+            return brandLogos[path] || null;
+        };
+
         const renderWorks = (filterCategory = 'all') => {
             portfolioGrid.innerHTML = '';
             
@@ -203,12 +214,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.style.animationDelay = `${index * 0.03}s`;
 
                 const tagsHTML = work.tags.map(tag => `<span>${tag}</span>`).join('');
+                
+                const logoUrl = getLogoUrl(work.logo);
+                const thumbnailHTML = logoUrl
+                    ? `<div class="project-thumbnail project-${work.category} has-logo">
+                           <img src="${logoUrl}" alt="${work.title} Logo" class="project-logo-img" />
+                       </div>`
+                    : `<div class="project-thumbnail project-${work.category}">
+                           ${work.initials}
+                       </div>`;
 
                 card.innerHTML = `
                     <div class="portfolio-image-wrapper">
-                        <div class="project-thumbnail project-${work.category}">
-                            ${work.initials}
-                        </div>
+                        ${thumbnailHTML}
                     </div>
                     <div class="portfolio-info">
                         <span class="project-category">${work.sector}</span>

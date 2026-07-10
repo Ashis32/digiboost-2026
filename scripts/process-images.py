@@ -53,8 +53,8 @@ def process_images():
                 if img.mode != 'RGBA':
                     img = img.convert('RGBA')
                 
-                # Resize preserving aspect ratio (max height 50, max width 150)
-                img.thumbnail((150, 50), Image.Resampling.LANCZOS)
+                # Resize preserving aspect ratio (max height 150, max width 400)
+                img.thumbnail((400, 150), Image.Resampling.LANCZOS)
                 
                 # Save as WebP
                 img.save(output_path, 'WEBP', quality=85)
