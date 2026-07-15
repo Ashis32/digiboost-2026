@@ -59,7 +59,8 @@ export const worksData = [
         desc: "Built a 1,000+ follower medical education page for an ENT specialist — simplifying OtoRhinoLaryngology through patient awareness reels, myth-busting posts, case breakdowns and health infographics.",
         category: "healthcare-wellness",
         tags: ["Medical Content", "Education", "Reel"],
-        initials: "HS"
+        initials: "HS",
+        logo: "healing-sense-png.png"
     },
     {
         title: "Mohanty Dental Care",
@@ -76,7 +77,8 @@ export const worksData = [
         desc: "Managed Instagram for a handcrafted ethnic wear boutique in Bhubaneswar — creating product showcases, try-on reels, meme-format content and collection launches to drive DM orders.",
         category: "fashion-beauty",
         tags: ["Fashion Content", "Reel"],
-        initials: "CB"
+        initials: "CB",
+        logo: "chandramali boutique.png"
     },
     {
         title: "VLCC Jagamara",
@@ -147,7 +149,8 @@ export const worksData = [
         desc: "Launched and grew Instagram for a skin, hair and slimming clinic in Bhubaneswar — with treatment explainer reels, offer posts for HIFU, Botox and Cryolipolysis, expert doctor content and patient testimonials.",
         category: "healthcare-wellness",
         tags: ["Clinic Branding", "Reels", "Lead Gen"],
-        initials: "RL"
+        initials: "RL",
+        logo: "releaf logo 1 (2).png"
     },
     {
         title: "Chandramalli Handloom Saree",
@@ -155,7 +158,8 @@ export const worksData = [
         desc: "Grew to 666 followers for an authentic handloom saree store — with cinematic saree showcases, client testimonials, Pattachitra and Banarasi collection reels, and festive offer campaigns.",
         category: "fashion-beauty",
         tags: ["Fashion Content", "Product Reels"],
-        initials: "CH"
+        initials: "CH",
+        logo: "handloom chandramali.png"
     },
     {
         title: "The Bhubaneswar Fitness",
@@ -163,7 +167,8 @@ export const worksData = [
         desc: "Launched social media for Odisha's exclusive Cult.fit equipment dealer — with viral gym setup reels (19K+ likes), product showcases, gym transformation content and B2B sales-driven posts.",
         category: "healthcare-wellness",
         tags: ["Viral Reels", "B2B Lead Gen"],
-        initials: "BF"
+        initials: "BF",
+        logo: "bbsr fitnesss.png"
     },
     {
         title: "Sridurga Ethnic Wear",
@@ -171,7 +176,8 @@ export const worksData = [
         desc: "Scaled Instagram to 7,000+ followers for a men's and women's ethnic wear store across Berhampur and Bhubaneswar — with saree draping sessions, festive campaigns and relatable Odia-language reels.",
         category: "fashion-beauty",
         tags: ["Social Growth", "Regional Content"],
-        initials: "SE"
+        initials: "SE",
+        logo: "343051447_613380687339803_3614007503193683279_n.jpg.jpeg"
     },
     {
         title: "All Time Fitness",
@@ -188,7 +194,8 @@ export const worksData = [
         desc: "Built thought-leadership content for a boutique real estate advisory firm in Bhubaneswar — with investment insight posts, Odisha market analysis reels, editorial graphics and clarity-first brand storytelling.",
         category: "corporate-services",
         tags: ["Thought Leadership", "Brand Storytelling"],
-        initials: "CP"
+        initials: "CP",
+        logo: "WhatsApp Image 2026-07-14 at 12.21.44 PM (2).jpeg"
     },
     {
         title: "Stratagem Architects",
@@ -196,7 +203,8 @@ export const worksData = [
         desc: "Managed social content for a full-service architecture, interior and landscape design firm in Bhubaneswar — growing to 1,100+ followers with project walkthroughs, behind-the-scenes construction reels, 3D renders and industry panel features.",
         category: "corporate-services",
         tags: ["Architecture Content", "Project Showcases", "Brand Building"],
-        initials: "SA"
+        initials: "SA",
+        logo: "02.png"
     },
     {
         title: "BookMeClean",
@@ -231,7 +239,8 @@ export const worksData = [
         desc: "Created brand identity and social strategy for a marriage hall and party lawn in Patia, Bhubaneswar — with venue showcase reels, wedding decor highlights, festive event posts and booking-focused graphics serving all of Odisha.",
         category: "events-hospitality",
         tags: ["Venue Branding", "Event Content", "Graphic Design"],
-        initials: "RL"
+        initials: "RL",
+        logo: "Rj lawns.png"
     },
     {
         title: "Hotel AS Lagoon",
@@ -266,7 +275,8 @@ export const worksData = [
         desc: "Managed social content for a premium franchise salon in Bhubaneswar — with bridal makeup showcases, service offer reels, hair transformation before-afters and seasonal campaign posts serving 20K+ guests.",
         category: "fashion-beauty",
         tags: ["Salon Branding", "Offer Campaigns"],
-        initials: "JH"
+        initials: "JH",
+        logo: "jawed habib.png"
     },
     {
         title: "#Blush Salon",
@@ -292,7 +302,8 @@ export const worksData = [
         desc: "Built social presence for a premium Somany tiles, granite and sanitaryware showroom in Khandagiri — with product showcases, interior design reels, designer basin and bathroom collection highlights to drive showroom visits.",
         category: "food-retail",
         tags: ["Product Content", "Brand Awareness"],
-        initials: "BM"
+        initials: "BM",
+        logo: "WhatsApp Image 2026-07-14 at 12.21.44 PM (1).jpeg"
     },
     {
         title: "NSalon",
@@ -300,7 +311,8 @@ export const worksData = [
         desc: "Managed content for a premium unisex salon chain with 2,996 followers across multiple cities including Bhubaneswar, Hyderabad and Bengaluru — with hair transformation reels, skin treatment content, new branch launch posts and lifestyle-led brand storytelling.",
         category: "fashion-beauty",
         tags: ["Salon Branding", "Multi-City"],
-        initials: "NS"
+        initials: "NS",
+        logo: "WhatsApp Image 2026-07-14 at 12.21.44 PM.jpeg"
     },
     {
         title: "Krish9 Events",
@@ -308,7 +320,8 @@ export const worksData = [
         desc: "Launched social media for a wedding and event planning company at 9th Street Banquet Hall, BDA City Bhubaneswar — with wedding decor showcases, reception ceremony reels, birthday event highlights and booking-focused content.",
         category: "events-hospitality",
         tags: ["Event Content", "Venue Branding"],
-        initials: "KE"
+        initials: "KE",
+        logo: "WhatsApp Image 2026-07-14 at 12.21.45 PM (1).jpeg"
     },
     {
         title: "UCMAS Nayapalli",
@@ -325,6 +338,7 @@ export const worksData = [
         desc: "Managed content for an award-winning candid wedding photography studio with 17K followers — featured in Sony Alpha India with 13+ global awards, cinematic wedding reels, pre-wedding shoots across Jaipur and Bhubaneswar, and client testimonial posts.",
         category: "events-hospitality",
         tags: ["Wedding Content", "Cinematic Reels"],
-        initials: "MP"
+        initials: "MP",
+        logo: "Asset 1.png"
     }
 ];

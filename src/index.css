@@ -2099,7 +2099,7 @@ p {
     height: 40px;
     width: auto;
     object-fit: contain;
-    filter: grayscale(1) opacity(0.45);
+    filter: grayscale(1) opacity(0.8);
     transition: var(--transition);
     cursor: pointer;
 }
