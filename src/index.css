@@ -1609,6 +1609,12 @@ p {
     .hero-desc {
         font-size: 1rem;
     }
+    .hero-content-wrapper {
+        padding-bottom: 5.5rem;
+    }
+    .hero-footer {
+        bottom: 0.5rem;
+    }
     .hero-btns {
         flex-direction: column;
         gap: 1rem;
