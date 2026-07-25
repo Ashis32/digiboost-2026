@@ -330,6 +330,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Play video on hover for showcase cards
+    const showcaseCards = document.querySelectorAll('.showcase-card');
+    showcaseCards.forEach(card => {
+        const video = card.querySelector('video');
+        if (video) {
+            card.addEventListener('mouseenter', () => {
+                video.play().catch(e => console.log('Video playback paused/blocked:', e));
+            });
+            card.addEventListener('mouseleave', () => {
+                video.pause();
+            });
+        }
+    });
 });
 
 window.resetFormState = () => {

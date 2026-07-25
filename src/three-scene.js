@@ -91,7 +91,7 @@ export function init3D() {
     logoGroup.add(ringMesh);
 
     // 3. Front Logo Decal
-    const logoFrontGeometry = new THREE.PlaneGeometry(2.0, 2.0);
+    const logoFrontGeometry = new THREE.PlaneGeometry(1.526, 2.0);
     const logoFrontMaterial = new THREE.MeshPhysicalMaterial({
         map: logoTexture,
         transparent: true,
@@ -105,9 +105,9 @@ export function init3D() {
     const logoFrontMesh = new THREE.Mesh(logoFrontGeometry, logoFrontMaterial);
     logoFrontMesh.position.z = 0.065; // Place right on the front face of the disc
     logoGroup.add(logoFrontMesh);
-
+ 
     // 4. Back Logo Decal
-    const logoBackGeometry = new THREE.PlaneGeometry(2.0, 2.0);
+    const logoBackGeometry = new THREE.PlaneGeometry(1.526, 2.0);
     const logoBackMaterial = new THREE.MeshPhysicalMaterial({
         map: logoTexture,
         transparent: true,
