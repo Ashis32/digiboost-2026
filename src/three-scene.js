@@ -154,9 +154,9 @@ function onWindowScroll() {
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercent = maxScroll > 0 ? scrollY / maxScroll : 0;
 
-    // Bind scroll to continuous rotation updates
-    targetRotationY = scrollPercent * Math.PI * 3.5;
-    targetRotationX = scrollPercent * Math.PI * 0.75;
+    // Bind scroll to continuous rotation updates (facing front at both start and end)
+    targetRotationY = scrollPercent * Math.PI * 4.0;
+    targetRotationX = Math.sin(scrollPercent * Math.PI) * 0.3;
     
     // Scale down slightly as scroll depth increases
     targetScale = 1.0 - scrollPercent * 0.35;
@@ -166,8 +166,7 @@ function animate() {
     requestAnimationFrame(animate);
 
     if (logoGroup) {
-        // Continuous slow idle spin
-        logoGroup.rotation.y += 0.003;
+        // Continuous slow idle spin on Z-axis (keeps logo facing front while rotating)
         logoGroup.rotation.z += 0.001;
 
         // Smoothly interpolate scroll-driven rotation
