@@ -340,5 +340,14 @@ export const worksData = [
         tags: ["Wedding Content", "Cinematic Reels"],
         initials: "MP",
         logo: "Asset 1.png"
+    },
+    {
+        title: "Vyro",
+        sector: "Fashion · Streetwear",
+        desc: "Created and managed social media strategy for urban streetwear label VYRO, developing cinematic product reels and launching new apparel collections.",
+        category: "fashion-beauty",
+        tags: ["Branding", "Reels", "Fashion Content"],
+        initials: "VY",
+        logo: "vyro.jpg"
     }
 ];
