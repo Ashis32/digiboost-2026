@@ -342,11 +342,11 @@ export const worksData = [
         logo: "Asset 1.png"
     },
     {
-        title: "Vyro",
-        sector: "Fashion · Streetwear",
-        desc: "Created and managed social media strategy for urban streetwear label VYRO, developing cinematic product reels and launching new apparel collections.",
-        category: "fashion-beauty",
-        tags: ["Branding", "Reels", "Fashion Content"],
+        title: "VYRO | Viral Odisha",
+        sector: "Media · Content",
+        desc: "Built and grew an Odisha-focused storytelling page with festival features, cultural explainers, local news reels and community-first content that keeps the region's stories real, raw and relevant.",
+        category: "events-hospitality",
+        tags: ["Content Strategy", "Reel", "Cultural Storytelling"],
         initials: "VY",
         logo: "vyro.jpg"
     }
